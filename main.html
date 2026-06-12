@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>CsClose — закрыть CS2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f1f5f9;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.5;
+            color: #0f172a;
+            padding: 2rem 1.5rem;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.5rem;
+        }
+
+        .sub {
+            color: #334155;
+            font-size: 1rem;
+        }
+
+        .card-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 1rem;
+            padding: 1.5rem;
+            flex: 1;
+            min-width: 200px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.03), 0 1px 3px rgba(0,0,0,0.05);
+            border: 1px solid #e2e8f0;
+        }
+
+        .card h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .card p {
+            color: #334155;
+            font-size: 0.9rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .card ul {
+            list-style: none;
+            margin-top: 0.5rem;
+        }
+
+        .card li {
+            font-size: 0.85rem;
+            color: #475569;
+            margin-bottom: 0.4rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .card li::before {
+            content: "—";
+            color: #3b82f6;
+        }
+
+        .download-area {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 1rem;
+            padding: 2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .download-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .download-desc {
+            color: #475569;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+        }
+
+        .btn {
+            background: #0f172a;
+            color: white;
+            border: none;
+            padding: 0.75rem 2rem;
+            font-size: 1rem;
+            font-weight: 500;
+            border-radius: 2rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-family: inherit;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn:active {
+            transform: scale(0.98);
+        }
+
+        .file-path {
+            margin-top: 1rem;
+            font-size: 0.7rem;
+            color: #64748b;
+            background: #f8fafc;
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 1rem;
+            font-family: monospace;
+        }
+
+        .note {
+            background: #fef9e3;
+            border-left: 3px solid #eab308;
+            padding: 0.75rem 1rem;
+            font-size: 0.8rem;
+            color: #422c04;
+            border-radius: 0.5rem;
+            margin-top: 1.2rem;
+            text-align: left;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 0.7rem;
+            color: #94a3b8;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 1.5rem;
+            margin-top: 0.5rem;
+        }
+        
+        img {
+          border-radius: 12px;
+          box-shadow: 0 1px 2px rgba(0,0,0,0.03), 0 1px 3px rgba(0,0,0,0.05);
+        }
+
+        @media (max-width: 680px) {
+            body {
+                padding: 1.25rem;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            .card-grid {
+                gap: 1rem;
+            }
+        }
+        
+        
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>CsClose</h1>
+        <div class="sub">Закрывает CS2. Помогает бороться с игровой зависимостью.</div>
+        <div>
+          <img src="sss.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="card-grid">
+        <div class="card">
+            <h3>Еак работает</h3>
+            <p>CsClose запускается в фоне и отслеживает процесс Counter-Strike 2. Как только игра запускается — программа мгновенно принудительно закрывает её.</p>
+            <ul>
+                <li>Завершает cs2.exe</li>
+                <li>Не отвлекает — работает в трее</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Против зависимости</h3>
+            <p>Инструмент для тех, кто хочет вернуть контроль над временем, но не может остановиться самостоятельно.</p>
+            <ul>
+                <li>Физически не даёт запустить матч</li>
+                <li>Снижает тягу к «быстрой игре»</li>
+                <li>Подходит для Windows 10 / Windows 11</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Безопасно</h3>
+            <p>Программа не собирает данные, не требует интернета. Единственная задача — закрыть CS2.</p>
+            <ul>
+                <li>Работает локально</li>
+                <li>Можно отключить через трей</li>
+                <li>Никаких скрытых функций</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="download-area">
+        <div class="download-title">📥 Скачать CsClose</div>
+        <div class="download-desc">Версия для Windows. Закрывает CS2 автоматически.</div>
+        
+        <a href="Cool.exe" download id="downloadLink" class="btn" style="text-decoration: none;">
+            Скачать программу
+        </a>
+        <div class="note">
+            ⚠️ Антивирус может запросить разрешение — программа завершает игровой процесс cs2.exe. Разрешите действие. Вредоносного кода нет.
+        </div>
+    </div>
+
+    <footer>
+        CsClose — инструмент для самоконтроля и борьбы с зависимостью от CS2.<br>
+        Не связан с Valve Corporation. CS2 — торговая марка Valve.
+    </footer>
+</div>
+
+<script>
+    const downloadLink = document.getElementById('downloadLink');
+    if (downloadLink) {
+        downloadLink.addEventListener('click', function(e) {
+            console.log('Скачивание CsClose: program/cs_close.exe');
+        });
+    }
+</script>
+</body>
+</html>
